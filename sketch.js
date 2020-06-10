@@ -26,9 +26,9 @@ function setup() {
 	 //World.add(world, ground);
 	 
 	 paper1=new Paper(150,650,30,30);
-	 dustbin1=new Dustbin(width/2,height-50,200,20);
-	 dustbin2=new Dustbin(300,585,20,150);
-	 dustbin3=new Dustbin(500,585,20,150);
+	 dustbin1=new Dustbin(width/2,height-50,200,20,{isStatic:true});
+	 dustbin2=new Dustbin(300,585,20,150,{isStatic:true});
+	 dustbin3=new Dustbin(500,585,20,150,{isStatic:true});
 	 ground1=new Ground(400,657,800,10);
 
 
@@ -53,7 +53,7 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode=== UP_ARROW){
-		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:85,y:-85});
+		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:70,y:-65});
 	}
 }
 
