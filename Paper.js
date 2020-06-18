@@ -11,7 +11,7 @@ class Paper{
     
     this.body = Bodies.circle(x, y, radius/2, options);
     this.r= radius;
-    this.height = height;
+   // this.height = height;
     
     World.add(world, this.body);
     }
