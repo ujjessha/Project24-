@@ -11,7 +11,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1600, 700);
 
 
 	engine = Engine.create();
@@ -27,7 +27,7 @@ function setup() {
 	 
 	 paper1=new Paper(150,650,30,30);
 	 dustbin1=new Dustbin(1200,650);
-	 ground1=new Ground(400,657,800,10);
+	 ground1=new Ground(400,657,1600,10);
 	
 	Engine.run(engine);
 
