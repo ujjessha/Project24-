@@ -40,8 +40,7 @@ function draw() {
   background(0);
   paper1.display();
   dustbin1.display();
-  dustbin2.display();
-  dustbin3.display();
+ 
   ground1.display();
   
   
